@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="pitch_slides.html">Pitch Slides</a>
-        <a href="brainstorm.html">Brainstorming</a>
-        <a href="burndown.html">Scrum</a>
-        <a href="#">Prototype (coming soon)</a>
-    </header>
+    
+    <div id="header-container"></div>
+    <script>
+        // Load the header content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+
     <div class="hero">
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OUHGvIepwqo?si=AYUxg0TkxZYp5dn6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
