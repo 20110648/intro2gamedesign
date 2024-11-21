@@ -59,3 +59,31 @@ header a {
     margin: 0;
     color: #ccc;
 }
+
+.index-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.index-hero-content h1 {
+    font-size: 72px;
+    margin: 0;
+}
+.index-hero-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.index-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
