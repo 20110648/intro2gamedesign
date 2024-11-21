@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Characters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <section class="characters">
+        <div class="character-tile" onclick="showDescription('character1')">
+            <img src="character1.jpg" alt="Character 1">
+            <h2>Character 1</h2>
+        </div>
+        <div class="character-tile" onclick="showDescription('character2')">
+            <img src="character2.jpg" alt="Character 2">
+            <h2>Character 2</h2>
+        </div>
+        <!-- Add more character tiles as needed -->
+    </section>
+
+    <div id="description-container" class="description-container">
+        <p id="character1" class="description">Character 1 description...</p>
+        <p id="character2" class="description">Character 2 description...</p>
+        <!-- Add more descriptions as needed -->
+    </div>
+
+    <script>
+        function showDescription(characterId) {
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(description => {
+                description.style.display = 'none';
+            });
+            document.getElementById(characterId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
