@@ -25,7 +25,7 @@ header a {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('mockup1.webp') center/cover no-repeat;
+    background: url('mockup1.jpg') center/cover no-repeat;
     margin-top: 0px; /* Offset for fixed header */
 }
 .hero-content {
