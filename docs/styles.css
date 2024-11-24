@@ -4,6 +4,7 @@ body {
     background: linear-gradient(to bottom, #5d4a87, #e8d4b0);
     color: #fff;
     text-align: left;
+    height: 100vh;
 }
 header {
     background-color: rgba(119, 54, 0, 0.623); /* Translucent dark color */
@@ -113,7 +114,7 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 100px;
+    padding-left: 100px;
 }
 
 .character-tile {
