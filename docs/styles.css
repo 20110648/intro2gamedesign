@@ -113,7 +113,7 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 100px;
 }
 
 .character-tile {
