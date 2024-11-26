@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Villages Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="header-container"></div>
+    <script>
+        // Load the header content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <!-- empty table with two columns and centered content -->
+
+            <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <td>
+                        <h1>Game Narrative</h1>
+                        <img src="narrative_diagram.png" alt="Narrative Diagram" style="background-color: white; max-height:  700px; border: 5px solid #fff; border-radius: 10px;">
+                    </td>
+                    <td>
+                        <h1>Beat Chart</h1>
+                        <img src="beat_chart.png" alt="Beat Chart" style="height:  700px; border: 5px solid #fff; border-radius: 10px;">
+                    </td>
+                </tr>
+
+        </div>
+    </section>
+
+    <!--
+    <div class="footer">
+        <p>Scroll for more</p>
+    </div>
+    -->
+</body>
+</html>
