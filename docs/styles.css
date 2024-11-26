@@ -6,6 +6,12 @@ body {
     text-align: left;
     height: 100vh;
 }
+
+div.narrative_container {   
+    background: linear-gradient(to bottom, #5d4a87, #574a32);
+    padding: 30px;
+}
+
 header {
     background-color: rgba(119, 54, 0, 0.623); /* Translucent dark color */
     padding: 20px;
