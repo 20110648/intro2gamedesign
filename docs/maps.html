@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Villages Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="header-container"></div>
+    <script>
+        // Load the header content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <div id="header-container"></div>
+            <script>
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('header-container').innerHTML = data;
+                    });
+            </script>
+
+            <!--    empty table with 3 empty columns -->
+            <table style="margin-left: auto; margin-right: auto;">
+                
+            <h1>Game Maps</h1>
+            <p>Click on the checkbox to include an overlay of the invasion routes and fertile land on the map.</p>
+  
+                <tr>
+                    <td>
+                        <h2>Fjord of Beginnings</h2>
+                        <div class="map-container">
+                            <img id="map-image" src="map1.jpg" alt="Map 1" style="height: 500px; width: auto;">
+                            <div>
+                                <input type="checkbox" id="overlay-checkbox">
+                                <label for="overlay-checkbox">Include overlay</label>
+                            </div>
+                        </div>
+                     </td>
+                    <td> 
+                        <h2>Frozen Wastes</h2>
+                        <div class="map2-container">
+                            <img id="map-image2" src="map2.jpg" alt="Map 2" style="height: 500px; width: auto;">
+                            <div>
+                                <input type="checkbox" id="overlay-checkbox2">
+                                <label for="overlay-checkbox2">Include overlay</label>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <h2>Coastal Cliffs</h2>
+                        <div class="map3-container">
+                            <img id="map-image3" src="map3.jpg" alt="Map 3" style="height: 500px; width: auto;">
+                            <div>
+                                <input type="checkbox" id="overlay-checkbox3">
+                                <label for="overlay-checkbox3">Include overlay</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+
+           
+        
+
+        
+            <script>
+                document.getElementById('overlay-checkbox').addEventListener('change', function() {
+                    const mapImage = document.getElementById('map-image');
+                    if (this.checked) {
+                        mapImage.src = 'map1_overlay.jpg';
+                    } else {
+                        mapImage.src = 'map1.jpg';
+                    }
+                });
+
+                
+                document.getElementById('overlay-checkbox2').addEventListener('change', function() {
+                    const mapImage = document.getElementById('map-image2');
+                    if (this.checked) {
+                        mapImage.src = 'map2_overlay.jpg';
+                    } else {
+                        mapImage.src = 'map2.jpg';
+                    }
+                });
+
+                
+                document.getElementById('overlay-checkbox3').addEventListener('change', function() {
+                    const mapImage = document.getElementById('map-image3');
+                    if (this.checked) {
+                        mapImage.src = 'map3_overlay.jpg';
+                    } else {
+                        mapImage.src = 'map3.jpg';
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <!--
+    <div class="footer">
+        <p>Scroll for more</p>
+    </div>
+    -->
+</body>
+</html>
