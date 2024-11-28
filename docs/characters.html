@@ -16,52 +16,74 @@
             });
     </script>
 
-    <h1 style="padding-left: 100px; padding-top: 100px;">Click on the characters to find out more!</h1>
+<h1 style="padding-left: 100px; padding-top: 100px;">Click on the Main Characters to find out more!</h1>
+<section class="characters">
+    <div class="character-tile" onclick="showDescription('protagonist')">
+        <img src="protagonist.jpg" alt="Protagonist">
+        <h2>Financial Advisor</h2>
+    </div>
+    <div class="character-tile" onclick="showDescription('antagonist')">
+        <img src="antagonist.jpg" alt="Antagonist">
+        <h2>City Planning Advisor</h2>
+    </div>
+    <!-- Add more character tiles as needed -->
+</section>
+
+    <h1 style="padding-left: 100px; padding-top: 100px;">Click on the Advisors to find out more!</h1>
     <section class="characters">
         <div class="character-tile" onclick="showDescription('character1')">
             <img src="profile_finance.jpg" alt="Finance Advisor">
-            <h2>Financial Advisor</h2>
+            <h2>Solveig (Finance)</h2>
         </div>
         <div class="character-tile" onclick="showDescription('character2')">
             <img src="profile_planner.jpg" alt="City Planning Advisor">
-            <h2>City Planning Advisor</h2>
+            <h2>Kari (City Planning)</h2>
         </div>
         <div class="character-tile" onclick="showDescription('character3')">
             <img src="profile_healer.jpg" alt="City Planning Advisor">
-            <h2>Health Advisor</h2>
+            <h2>Bjorn (Health) </h2>
         </div>
         <div class="character-tile" onclick="showDescription('character4')">
             <img src="profile_priest.jpg" alt="City Planning Advisor">
-            <h2>Religion Advisor</h2>
+            <h2>Frey (Religion)</h2>
         </div>
         <div class="character-tile" onclick="showDescription('character5')">
             <img src="profile_raider.jpg" alt="City Planning Advisor">
-            <h2>Raids Advisor</h2>
+            <h2>Ronald (Raids)</h2>
         </div>
         <div class="character-tile" onclick="showDescription('character6')">
             <img src="profile_safety.jpg" alt="City Planning Advisor">
-            <h2>Public Safety Advisor</h2>
+            <h2>Astrid (Public Safety)</h2>
         </div>
         <div class="character-tile" onclick="showDescription('character7')">
             <img src="profile_utilities.jpg" alt="City Planning Advisor">
-            <h2>Utilities Advisor</h2>
+            <h2>Harald (Utilities)</h2>
         </div>
         <div class="character-tile" onclick="showDescription('character8')">
             <img src="profile_transportation.jpg" alt="City Planning Advisor">
-            <h2>Transportation Advisor</h2>
+            <h2>Revna (Transportation)</h2>
         </div>
         <!-- Add more character tiles as needed -->
     </section>
 
     <div id="description-container" class="description-container">
-        <p id="character1" class="description">Financial Advisor: This character helps manage the village's finances and ensures economic stability.</p>
-        <p id="character2" class="description">City Planner: This character is responsible for planning and developing the village's infrastructure.</p>
-        <p id="character3" class="description">Health Advisor: This character oversees the well-being of the villagers, ensuring access to remedies, treatments, and preventative care.</p>
-        <p id="character4" class="description">Religion Advisor: This character guides the spiritual practices of the community, maintaining harmony with the gods and sacred traditions.</p>
-        <p id="character5" class="description">Raids Advisor: This character plans and executes strategic raids, ensuring successful resource acquisition and minimal losses.</p>
-        <p id="character6" class="description">Public Safety Advisor: This character ensures the protection of the village through defense planning and enforcement of communal rules.</p>
-        <p id="character7" class="description">Utilities Advisor: This character manages essential services like water, firewood, and waste, ensuring the village functions smoothly.</p>
-        <p id="character8" class="description">Transportation Advisor: This character coordinates the movement of people and goods, maintaining pathways, carts, and longships for efficient travel.</p>
+        <p id="character1" class="description">Financial Advisor: Shrewd and pragmatic, Solveig ensures resources are well-managed. Wears fine but understated clothing, with ledgers always in hand.</p>
+        <p id="character2" class="description">City Planner: Calm, detail-oriented architect with a passion for symmetry and efficiency. Helps lay out infrastructure to support rapid growth. Wears simple, practical clothing with tools hanging from a belt.</p>
+        <p id="character3" class="description">Health Advisor: Warm and nurturing, with a sharp mind for medicinal and scholarly pursuits. Adorned in a flowing cloak with herbal pouches and a small tome strapped to his hip.</p>
+        <p id="character4" class="description">Religion Advisor: A fierce advocate for balance between progress and nature. Dresses in earthy tones, with a necklace made of stones and carved wood. He carries a large staff with rune inscriptions.</p>
+        <p id="character5" class="description">Raids Advisor: Hot-headed yet loyal warrior who thrives on battle. Advocates for aggressive strategies against rivals. Sporting braided hair and an axe slung across his back, he is every inch the archetypal Viking warrior.</p>
+        <p id="character6" class="description">Public Safety Advisor: A no-nonsense former soldier turned peacekeeper. Keeps order within the settlement and mediates conflicts. Broad-shouldered, wearing a leather breastplate and always carrying her sword.</p>
+        <p id="character7" class="description">Utilities Advisor: Soft-spoken but firm, Harald manages water, food, and other essential resources. Clad in durable workwear, he is practical and hands-on.</p>
+        <p id="character8" class="description">Transportation Advisor: Adventurous and innovative, always looking for ways to improve trade routes and exploration. Wears a sea-weathered coat and a compass around her neck.</p>
+        <p id="protagonist" class="description">Protagonist with player-chosen name:<br>Role: Chieftain<br>Motivations: To establish a thriving Viking city that can withstand time and rival all others.<br>Goals: Unite his people and elevate their settlement into a flourishing city-state.<br>Needs: To navigate the delicate balance of diplomacy, progress, and defence against rivals.</p>
+        <p id="antagonist" class="description">Antagonist: Role: Leader of the rival Isvarg Clan<br>
+            Motivations: Driven by envy and ambition to dominate Norrvik’s resources and crush the chieftain's legacy.<br>
+            Personality: Brutal, cunning, and prideful, but deeply loyal to his own clan.<br>
+            Appearance: Towering and muscular, adorned with scarred armour and a helm fashioned from a bear skull. His fiery red hair and battle-scarred face embody his ruthless nature.<br>
+            Goals: Conquer Norrvik to secure his clan’s supremacy.<br>
+            Wants: Power, riches, and eternal glory in the sagas.<br>
+            Needs: To maintain his authority over his own clan, which begins to question his relentless warfare.<br>
+            </p>
         <!-- Add more descriptions as needed -->
     </div>
 
