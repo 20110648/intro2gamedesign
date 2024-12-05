@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Villages Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="header-container"></div>
+    <script>
+        // Load the header content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <section class="hero">
+        <div class="hero-content">
+            <embed src="submission3_GDD_clewes_wallis_introduction_to_gamedesign.pdf" type="application/pdf" width="1100vh" height="600px">
+        </div>
+    </section>
+
+    <!--
+    <div class="footer">
+        <p>Scroll for more</p>
+    </div>
+    -->
+</body>
+</html>
